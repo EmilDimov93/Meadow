@@ -26,6 +26,6 @@ Most fonts are not symetrical when it comes to the X and Y axis of a symbol. Thi
 
 Version log:
 
-Meadow 1.0: One function called meadow();, takes no arguments
+Meadow 1.0: One function called meadow(); that takes no arguments. Works with C and C++
 
-Meadow 2.0: Function meadow(length of X axis of your meadow, length of Y axis of your meadow); now takes two arguments, regarding the size of your meadow
+Meadow 2.0: Function meadow(length of X axis of your meadow, length of Y axis of your meadow); now takes two arguments, regarding the size of your meadow. No longer works with C, only C++
