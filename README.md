@@ -1,4 +1,4 @@
-# meadow library 2.0
+# Meadow Library 2.0
  A C++ library that will create a fully functioning field that will allow you to print symbols at a specific location.
  
  NOTICE: The first version(meadow1_0.h in the old_versions folder) works for C as well as C++.
