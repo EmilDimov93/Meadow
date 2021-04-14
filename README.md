@@ -22,12 +22,12 @@
  
  The second function is called mclear(stands for meadow clear) and it takes no arguments. It simply clears your field, making all values 0.
 
- #Warning: 
+ # Warning: 
  Most fonts are not symetrical when it comes to the X and Y axis of a symbol. This is why if you make your meadow have the same X and Y axis size(such as 10x10), it would seem extended.
 
 
 
- #Version log:
+ # Version log:
 
 Meadow 1.0: One function called meadow(); that takes no arguments. Works with C and C++
 
