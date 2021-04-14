@@ -39,4 +39,6 @@ Meadow 3.0: Changed two-dimensional array from f[][] to m[][] for simplicity. Ad
 
 Meadow 4.0: Compatibility with both C and C++ again. Changed a1, a2, a3, a4 and a5 to ma1, ma2, ma3, ma4 and ma5 so it does not confuse other variables that you have named that way. Added mclear(); function.
 
+Meadow 4.1: Same as v4.0, but without unnecessary comments and spaces
+
 Currently working on: Fill function and use of dynamic memory
