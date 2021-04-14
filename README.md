@@ -1,7 +1,7 @@
 # Meadow Library 4.0
  A C and C++ library that will create a fully functioning field that will allow you to print symbols at a specific location.
  
- NOTICE: Versions 2.0, 2.1 and 3.0 work only for C++
+ #### NOTICE: Versions 2.0, 2.1 and 3.0 work only for C++
 
  Hello! In this file you will find more information on the meadow.h library(version 4.0). It makes creating a game, graph or etc in C and C++ so much easier.
 
