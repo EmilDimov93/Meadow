@@ -14,9 +14,7 @@
 
  In the current version of the library, there are three functions. The main one takes two arguments - meadow(length of X axis of your meadow, length of Y axis of your meadow);. For example, if you use meadow(20, 10); the function will print out a field that is 10x10 symbols large. 
  
- There is a two-dimensional array, which controls where the symbols you choose get printed out. For example, if you use m[1][1] = 1;, this will make the first symbol of the first row become the ASCII code, enumerated with one. You can change the first five symbols by changing the value of ma1, ma2, ma3, ma4 and ma5 in any function to any ASCII code you desire. Link to example ASCII table: http://www.asciitable.com.
- 
- These are the first 5 symbols. If you want to add more symbols, you will have to change the code of the library. You can do that by right-clicking the file and editing it with your desired program. Comments will help you with understanding the code better.
+ There is a two-dimensional array, which controls where the symbols you choose get printed out. For example, if you use m[1][1] = 1;, this will make the first symbol of the first row become the ASCII code, enumerated with one. You can change the first five symbols by changing the value of ma1, ma2, ma3, ma4 and ma5 in any function to any ASCII code you desire. Link to example ASCII table: http://www.asciitable.com. These are the first 5 symbols. If you want to add more symbols, you will have to change the code of the library. You can do that by right-clicking the file and editing it with your desired program. Comments will help you with understanding the code better.
  
  The second function is called mclear(stands for meadow clear) and it takes no arguments. It simply clears your field, making all values 0.
  
