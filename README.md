@@ -42,4 +42,4 @@ Meadow 4.0: Compatibility with both C and C++ again. Changed a1, a2, a3, a4 and 
 
 Meadow 4.1: Same as v4.0, but without unnecessary comments and spaces
 
-Meadow 5.0: Added mfill function.
+Meadow 5.0: Added mfill(); function.
