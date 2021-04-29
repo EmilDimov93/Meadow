@@ -19,7 +19,7 @@
  The second function is called mclear(stands for meadow clear) and it takes no arguments. It simply clears your field, making all values 0.
  
  The third function is called mfill(stands for meadow fill) and it fills the space between two coordinates that you point out. It takes 5 arguments: mfill(x coordinate of first corner, y coordinate of the first corner, x coordinate of the second corner, y coordinate of the second corner, "material" which the space will be filled with. Use numbers one to five);
- You can choose any two corners of the space you want filled and write their coordinater respectively.
+ You can choose any two corners of the space you want filled and write their coordinates respectively.
 
  ## Warning: 
  Most fonts are not symetrical when it comes to the X and Y axis of a symbol. This is why if you make your meadow have the same X and Y axis size(such as 10x10), it would seem extended.
