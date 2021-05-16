@@ -70,4 +70,5 @@ Meadow 4.1: Same as v4.0, but without unnecessary comments and spaces
 Meadow 5.0: Added mfill(); function.
 
 Meadow 6.0: Added option to use symetrical font. Removed ma1, ma2, ma3, ma4 and ma5 for lack of necessity. Separated versions for C and C++. Added mfont(); function for the C version. Made arguments for meadow(); function unnecessary and added a font argument in C++
-=======
+
+Currently working on: use of dynamic memory, meadow enumeration, border material choice, use of color on meadow
