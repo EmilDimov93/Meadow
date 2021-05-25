@@ -16,7 +16,7 @@
 
  There are 4 functions in the current version. The main one is meadow();. It takes two arguments - the size of the X axis and the size of the Y axis of your meadow. Then a field will be printed out.
 
- To place symbols on the meadow, you have to asign where you want to place them before calling the function with the two dimensional array m[][]. For example, if you write m[1][1] = 254; before
+ To place symbols on the meadow, you have to asign where you want to place them before calling the function with the two dimensional array m[ ][ ]. For example, if you write m[1][1] = 254; before
 
  calling the meadow(); function you will get a square printed out on the first row and first column of your meadow. That is because 254 is the symbol for square in the ASCII table. You can use any
 
@@ -42,7 +42,7 @@
 
  There are 3 functions in the current version. The main one is meadow(); and it can take up to four arguments - the size of the X axis of your meadow, the size of the Y axis of your meadow, the orientation of your meadow and whether or not you want to use the font fixing option. Then a field will be printed out.
 
- To place symbols on the meadow, you have to asign where you want to place them before calling the function with the two dimensional array m[][]. For example, if you write m[1][1] = 254; before
+ To place symbols on the meadow, you have to asign where you want to place them before calling the function with the two dimensional array m[ ][ ]. For example, if you write m[1][1] = 254; before
 
  calling the meadow(); function you will get a square printed out on the first row and first column of your meadow. That is because 254 is the symbol for square in the ASCII table. You can use any
 
@@ -70,7 +70,7 @@
 
  In Meadow Edu there is only one function: the main one. This is to inspire learners to create other functions themselves. It works for both C and C++. The function is meadow();. It takes two arguments - the size of the X axis and the size of the Y axis of your meadow. Then a field will be printed out.
 
- To place symbols on the meadow, you have to asign where you want to place them before calling the function with the two dimensional array m[][]. For example, if you write m[1][1] = 254; before
+ To place symbols on the meadow, you have to asign where you want to place them before calling the function with the two dimensional array m[ ][ ]. For example, if you write m[1][1] = 254; before
 
  calling the meadow(); function you will get a square printed out on the first row and first column of your meadow. That is because 254 is the symbol for square in the ASCII table. You can use any
 
