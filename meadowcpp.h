@@ -1,10 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <windows.h>
 
-int m[112][112];  //two-dimensional array that controls the location of the symbols
+int (*m)[112] = static_cast < int(*)[112]>(calloc(112, sizeof(int[112])));  //two-dimensional array that controls the location of the symbols
 
-void meadow(int sizeX = 20, int sizeY = 20, bool font = false){
+void meadow(int sizeX = 20, int sizeY = 20, char *morient = "D", bool font = false){
 
     if(font == true){
 
@@ -18,11 +17,7 @@ void meadow(int sizeX = 20, int sizeY = 20, bool font = false){
 
     }
 
-    printf("%c", 201);  //border top left
-
-    for(int i = 0; i < sizeX; i++){printf("%c", 205);}  //border top middle
-
-    printf("%c\n", 187);    //border top right
+    printf("%c", 201);  for(int i = 0; i < sizeX; i++){printf("%c", 205);}  printf("%c\n", 187);    //border top
 
     for(int j = 0; sizeY - j > 0; j++){
 
@@ -30,14 +25,21 @@ void meadow(int sizeX = 20, int sizeY = 20, bool font = false){
 
         for(int i = 1; i < sizeX + 1; i++){
 
-            if(m[i][sizeY - j] == 0){   //switch [sizeY - j] with [j + 1] to flip field vertically. switch [i] with [sizeX - i - 1] to flip field horizontal. Same on row 40
+            int x, y;
+
+            if(morient == "lrtb" || morient == "lt" || morient == "D"){x = i; y = j + 1;}    //checking preferred orientation
+            if(morient == "lrbt" || morient == "lb" || morient == "A"){x = i; y = sizeY - j;}
+            if(morient == "rltb" || morient == "rt" || morient == "C"){x = sizeX - i + 1; y = j + 1;}
+            if(morient == "rlbt" || morient == "rb" || morient == "B"){x = sizeX - i + 1; y = sizeY - j;}
+
+            if(m[x][y] == 0){
 
                 printf(" ");
                 continue;
 
             }
 
-            printf("%c", m[i][sizeY - j]);
+            printf("%c", m[x][y]);
 
         }
 
@@ -45,11 +47,7 @@ void meadow(int sizeX = 20, int sizeY = 20, bool font = false){
 
     }
 
-    printf("%c", 200);  //border bottom left
-
-    for(int i = 0; i < sizeX; i++){printf("%c", 205);}  //border bottom middle
-
-    printf("%c\n", 188);    //border bottom right
+    printf("%c", 200);  for(int i = 0; i < sizeX; i++){printf("%c", 205);}  printf("%c\n", 188);    //border bottom
 
 }
 

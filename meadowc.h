@@ -1,8 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <windows.h>
 
 int m[112][112];  //two-dimensional array that controls the location of the symbols
+
+char *morient = "D";
 
 void mfont(){
 
@@ -30,14 +30,21 @@ void meadow(int sizeX, int sizeY){
 
         for(int i = 1; i < sizeX + 1; i++){
 
-            if(m[i][sizeY - j] == 0){   //switch [sizeY - j] with [j + 1] to flip field vertically. switch [i] with [sizeX - i - 1] to flip field horizontal. Same on row 40
+            int x, y;
+
+            if(morient == "lrtb" || morient == "lt" || morient == "D"){x = i; y = j + 1;}    //checking preferred orientation
+            if(morient == "lrbt" || morient == "lb" || morient == "A"){x = i; y = sizeY - j;}
+            if(morient == "rltb" || morient == "rt" || morient == "C"){x = sizeX - i + 1; y = j + 1;}
+            if(morient == "rlbt" || morient == "rb" || morient == "B"){x = sizeX - i + 1; y = sizeY - j;}
+
+            if(m[x][y] == 0){
 
                 printf(" ");
                 continue;
 
             }
 
-            printf("%c", m[i][sizeY - j]);
+            printf("%c", m[x][y]);
 
 
         }
