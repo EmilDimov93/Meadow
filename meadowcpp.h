@@ -51,7 +51,7 @@ void meadow(int sizeX = 20, int sizeY = 20, char *morient = "D", bool font = fal
 
 }
 
-void mclear(){for(int i = 0; i <= 112; i++){for(int j = 0; j <= 112; j++){m[i][j] = 0;}}}   //function with two loops that clears your meadow
+void mclear(){for(int i = 0; i <= 111; i++){for(int j = 0; j <= 112; j++){m[i][j] = 0;}}}   //function with two loops that clears your meadow
 
 void mfill(int fcoordx1, int fcoordy1, int fcoordx2, int fcoordy2, int material){
 
